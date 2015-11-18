@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Exercise_1__Boom" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tt6-SH-xpw">
+                                <rect key="frame" x="207" y="130" width="93" height="30"/>
+                                <state key="normal" title="Hide Red"/>
+                                <connections>
+                                    <action selector="HideRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PVR-Fr-213"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RedBow" translatesAutoresizingMaskIntoConstraints="NO" id="HjR-w2-LAA">
+                                <rect key="frame" x="117" y="264" width="183" height="168"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlueMan" translatesAutoresizingMaskIntoConstraints="NO" id="tjG-Dg-4af">
+                                <rect key="frame" x="-11" y="82" width="195" height="125"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gwu-Aw-MXj">
+                                <rect key="frame" x="20" y="333" width="92" height="30"/>
+                                <state key="normal" title="Hide Blue"/>
+                                <connections>
+                                    <action selector="HideBlue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D8a-vD-a7F"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="BlueButton" destination="Gwu-Aw-MXj" id="b9P-Aa-EoC"/>
+                        <outlet property="BlueMan" destination="tjG-Dg-4af" id="uYZ-oI-NSF"/>
+                        <outlet property="RedBow" destination="HjR-w2-LAA" id="b8b-Rl-jeV"/>
+                        <outlet property="RedButton" destination="Tt6-SH-xpw" id="aRC-JR-ZUg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="361"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BlueMan" width="3200" height="2953"/>
+        <image name="RedBow" width="350" height="174"/>
+    </resources>
+</document>
